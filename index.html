@@ -3,65 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Avançado</title>
+    <title>Calculadora de Soma</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Meu Site Avançado</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>Calculadora de Soma</h1>
     </header>
 
-    <section id="destaque">
-        <h2>Destaques</h2>
-        <article>
-            <img src="destaque1.jpg" alt="Destaque 1">
-            <h3>Título do Destaque 1</h3>
-            <p>Descrição do Destaque 1.</p>
-        </article>
-        <article>
-            <img src="destaque2.jpg" alt="Destaque 2">
-            <h3>Título do Destaque 2</h3>
-            <p>Descrição do Destaque 2.</p>
-        </article>
+    <section id="calculator">
+        <label for="num1">Número 1:</label>
+        <input type="number" id="num1">
+        <label for="num2">Número 2:</label>
+        <input type="number" id="num2">
+        <button id="calculate">Calcular</button>
+        <p>Resultado: <span id="result">0</span></p>
     </section>
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Um pouco sobre nossa empresa ou projeto.</p>
-    </section>
-
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <ul>
-            <li>Serviço 1</li>
-            <li>Serviço 2</li>
-            <li>Serviço 3</li>
-        </ul>
-    </section>
-
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Meu Site Avançado</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
